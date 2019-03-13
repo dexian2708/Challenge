@@ -7,14 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		106FDF7F22392CD300F390A2 /* TitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106FDF7E22392CD300F390A2 /* TitleCell.swift */; };
+		106FDF8122392CDF00F390A2 /* DetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106FDF8022392CDF00F390A2 /* DetailsCell.swift */; };
+		106FDF842239358C00F390A2 /* DetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106FDF832239358C00F390A2 /* DetailsModel.swift */; };
+		106FDF8622393BC500F390A2 /* CareGiverModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106FDF8522393BC500F390A2 /* CareGiverModel.swift */; };
 		10E299492238C98300F2DB34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E299482238C98300F2DB34 /* AppDelegate.swift */; };
 		10E2994B2238C98300F2DB34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E2994A2238C98300F2DB34 /* ViewController.swift */; };
 		10E2994E2238C98300F2DB34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10E2994C2238C98300F2DB34 /* Main.storyboard */; };
 		10E299502238C98400F2DB34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10E2994F2238C98400F2DB34 /* Assets.xcassets */; };
 		10E299532238C98400F2DB34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10E299512238C98400F2DB34 /* LaunchScreen.storyboard */; };
+		10E2995B2238F5DF00F2DB34 /* CareGiverTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E2995A2238F5DF00F2DB34 /* CareGiverTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		106FDF7E22392CD300F390A2 /* TitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCell.swift; sourceTree = "<group>"; };
+		106FDF8022392CDF00F390A2 /* DetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCell.swift; sourceTree = "<group>"; };
+		106FDF832239358C00F390A2 /* DetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsModel.swift; sourceTree = "<group>"; };
+		106FDF8522393BC500F390A2 /* CareGiverModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareGiverModel.swift; sourceTree = "<group>"; };
 		10E299452238C98300F2DB34 /* Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Challenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10E299482238C98300F2DB34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10E2994A2238C98300F2DB34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +31,7 @@
 		10E2994F2238C98400F2DB34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10E299522238C98400F2DB34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10E299542238C98400F2DB34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10E2995A2238F5DF00F2DB34 /* CareGiverTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareGiverTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +45,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		106FDF7D22392CBD00F390A2 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				10E2995A2238F5DF00F2DB34 /* CareGiverTableViewCell.swift */,
+				106FDF7E22392CD300F390A2 /* TitleCell.swift */,
+				106FDF8022392CDF00F390A2 /* DetailsCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		106FDF822239357B00F390A2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				106FDF832239358C00F390A2 /* DetailsModel.swift */,
+				106FDF8522393BC500F390A2 /* CareGiverModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		10E2993C2238C98300F2DB34 = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +83,8 @@
 		10E299472238C98300F2DB34 /* Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				106FDF822239357B00F390A2 /* Models */,
+				106FDF7D22392CBD00F390A2 /* TableViewCells */,
 				10E299482238C98300F2DB34 /* AppDelegate.swift */,
 				10E2994A2238C98300F2DB34 /* ViewController.swift */,
 				10E2994C2238C98300F2DB34 /* Main.storyboard */,
@@ -135,8 +166,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				106FDF7F22392CD300F390A2 /* TitleCell.swift in Sources */,
 				10E2994B2238C98300F2DB34 /* ViewController.swift in Sources */,
+				106FDF8122392CDF00F390A2 /* DetailsCell.swift in Sources */,
 				10E299492238C98300F2DB34 /* AppDelegate.swift in Sources */,
+				106FDF8622393BC500F390A2 /* CareGiverModel.swift in Sources */,
+				106FDF842239358C00F390A2 /* DetailsModel.swift in Sources */,
+				10E2995B2238F5DF00F2DB34 /* CareGiverTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +318,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3YV8B5F99M;
 				INFOPLIST_FILE = Challenge/Info.plist;
@@ -291,6 +328,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dexter.Challenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,6 +338,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3YV8B5F99M;
 				INFOPLIST_FILE = Challenge/Info.plist;
@@ -309,6 +348,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dexter.Challenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
